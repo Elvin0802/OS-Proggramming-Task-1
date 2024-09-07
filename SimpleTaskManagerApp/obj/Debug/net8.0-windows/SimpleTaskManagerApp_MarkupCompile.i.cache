@@ -1,0 +1,20 @@
+﻿SimpleTaskManagerApp
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\Visual Programming Codes\C# Codes\System (OS) Programming Projects\SimpleTaskManagerApp\SimpleTaskManagerApp\obj\Debug\net8.0-windows\
+SimpleTaskManagerApp
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+D:\Visual Programming Codes\C# Codes\System (OS) Programming Projects\SimpleTaskManagerApp\SimpleTaskManagerApp\App.xaml
+41478875363
+
+14121369308
+19973876554
+Views\BlackListPageView.xaml;Views\GetAppNameWindowView.xaml;Views\MainWindowView.xaml;Views\SystemDetailsPageView.xaml;
+
+True
+

@@ -1,0 +1,25 @@
+﻿<NavigationWindow x:Class="SimpleTaskManagerApp.Views.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleTaskManagerApp.Views"
+        mc:Ignorable="d"
+                  
+        Title="Simple Task Manager" 
+        Height="700"
+        Width="1000"
+        ShowsNavigationUI="False"
+        ResizeMode="NoResize" Closed="NavigationWindow_Closed"
+                  
+                  >
+    
+    <NavigationWindow.Content>
+        <Grid>
+
+            <Frame x:Name="MainFrame"/>
+
+        </Grid>
+    </NavigationWindow.Content>
+    
+</NavigationWindow>

@@ -1,0 +1,77 @@
+﻿<Page x:Class="SimpleTaskManagerApp.Views.BlackListPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SimpleTaskManagerApp.Views"
+      mc:Ignorable="d" 
+      
+      Height="auto" 
+      Width="auto"
+      Name="BlackListPage"
+      FontSize="16">
+
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    Margin="10">
+
+            <Button x:Name="AddBtn" 
+                  Content="Add new Process"
+                  Command="{Binding AddProcessCommand}"
+                  Width="220"
+                  Margin="5"/>
+
+            <Button x:Name="BackBtn" 
+                    Content="Back"
+                    Command="{Binding BackCommand}"
+                    CommandParameter="{Binding ElementName=BlackListPage}"
+                    Width="140"
+                    Margin="5"/>
+
+        </StackPanel>
+
+        <ListView x:Name="ProcessListView" 
+                  FontSize="14"
+                  Grid.Row="1"
+                  Margin="10" >
+
+            <ListView.View>
+                <GridView>
+
+                    <GridViewColumn Width="320" 
+                                    Header="Process Name"
+                                    DisplayMemberBinding="{Binding}"/>
+
+                    <GridViewColumn Width="160" 
+                                    Header="Actions">
+                        
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                
+                                <StackPanel>
+                                    <Button Command="{Binding DataContext.RemoveProcessCommand, 
+                                            RelativeSource={RelativeSource AncestorType=ListView}}"
+                                            CommandParameter="{Binding}"
+                                            Content="Remove"
+                                            Margin="5"/>
+                                </StackPanel>
+
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                </GridView>
+                
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>

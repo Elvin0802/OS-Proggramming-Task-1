@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ATFWKvIP2o0=",
+  "success": true,
+  "projectFilePath": "D:\\Visual Programming Codes\\C# Codes\\System (OS) Programming Projects\\SimpleTaskManagerApp\\SimpleTaskManagerApp\\SimpleTaskManagerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Принц\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\Принц\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\Принц\\.nuget\\packages\\simpleinjector\\5.5.0\\simpleinjector.5.5.0.nupkg.sha512",
+    "C:\\Users\\Принц\\.nuget\\packages\\system.componentmodel\\4.0.1\\system.componentmodel.4.0.1.nupkg.sha512",
+    "C:\\Users\\Принц\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
